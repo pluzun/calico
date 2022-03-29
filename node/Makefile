@@ -46,7 +46,7 @@ endif
 ###############################################################################
 
 # Versions and location of dependencies used in the build.
-BIRD_IMAGE ?= calico/bird:$(BIRD_VERSION)-$(ARCH)
+BIRD_IMAGE ?= registry.ovh.net/tdesreum/bird:1.6.8
 BIRD_SOURCE=filesystem/included-source/bird-$(BIRD_VERSION).tar.gz
 FELIX_GPL_SOURCE=filesystem/included-source/felix-ebpf-gpl.tar.gz
 INCLUDED_SOURCE=$(BIRD_SOURCE) $(FELIX_GPL_SOURCE)
